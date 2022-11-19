@@ -2,15 +2,16 @@ from math import sqrt
 import random
 import matplotlib.pyplot as plt
 
-point=0
 point_num=10000
 
 in_circle=[[],[]]
 out_circle=[[],[]]
 
 for i in range(point_num):
+   #set x and y coordinates
    x=random.uniform(-1,1)
    y=random.uniform(-1,1)
+   #find the distance of the specified point from the center
    distance = sqrt(x**2+y**2)
 
    if distance > 1:
